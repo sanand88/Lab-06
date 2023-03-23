@@ -8,6 +8,7 @@ def print_menu():
 # defines the menu
 
 
+
 def encoder(pwd):
 # define the encoding function
     global result
