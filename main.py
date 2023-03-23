@@ -1,16 +1,44 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Seher Anand
+def print_menu():
+    print("Menu")
+    print("-------------")
+    print("1. Encode")
+    print("2. Decode")
+    print("3. Quit")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def encoder(pwd):
+    global result
+    result = ""
+    for i in pwd:
+        i = int(i) + 3
+        if i >= 7:
+            i = i - 10
+            i = str(i)
+        else:
+            i = str(i)
+        result += i
+    return result
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def decoder():
+
+def main():
+    cont = True
+
+    while cont:
+        print_menu()
+        option = int(input("Please enter your password to encode: "))
+        print()
+
+        if option == 1:
+            pwd = input("Please enter your password: ")
+            encoder(pwd)
+            print("Your password has been encoded and stored!")
+        if option == 2:
+            decoded_pwd = decoder()
+            print(f"The encoded password is {encoder(pwd)}, and the original password is {decoded_pwd}.")
+            print()
+        if option == 3:
+            break
+
+
