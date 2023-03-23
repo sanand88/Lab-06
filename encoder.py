@@ -9,6 +9,7 @@ def print_menu():
 
 
 def encoder(pwd):
+# define the encoding function
     global result
     result = ""
     for i in pwd:
