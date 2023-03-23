@@ -23,7 +23,14 @@ def encoder(pwd):
         result += i
     return result
 
+# done by lab partner Camila Perez
 def decoder():
+    og_pwd = ""
+    if len(code) == 8:
+        for i in range(len(code)):
+            s = int(code[i])-3
+            og_pwd += str(s)
+    return og_pwd
 
 def main():
     cont = True
